@@ -1,7 +1,9 @@
 var rowOne = document.getElementById('row-1')
+var formEl = document.querySelector("#task-form");
 
-var getWeather = function() {
-	var apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=chicago&appid=51dd21f901f16b9d693c9921904f8b5a&units=imperial"
+
+var getWeather = function(cityName) {
+	var apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=51dd21f901f16b9d693c9921904f8b5a&units=imperial`
 
 	fetch(apiUrl).then(function(response) {
 		response.json().then(function(data) {
@@ -20,4 +22,11 @@ var getWeather = function() {
 	
 }
 
-getWeather()
+var getCity = function() {
+	event.preventDefault();
+	var city = document.querySelector("input[name='city-name']").value
+	console.log(city)
+	getWeather(city)
+}
+
+formEl.addEventListener("submit", getCity);
