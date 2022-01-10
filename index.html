@@ -10,15 +10,158 @@
 </head>
 
 <body>
-	<main class="container">
+	<header class="d-flex justify-content-center">
+		<h1 class="header">Find The Weather</h1>
+	</header>
+
+	<main class="container-xl row justify-content-end">
+		<!-- Search and Save -->
+		<aside class="col-4" id="aside">
+			<form class="form row" id="task-form">
+				<input class="form-control col-7" type="text" name="city-name" placeholder="Enter City Name"/>
+				<button class="btn btn-primary col-3" type="submit">Search</button>
+			</form>
+		</aside>
+
+		
+			<!-- Today's Weather -->
+			<section class="col-8" id="today" style="height: 300px">
+				<div class="">
+					<h2>city & date</h2>
+					<p></p>
+					<p></p>
+					<p></p>
+					<p></p>
+				</div>
+			</section>
+
+			<!-- Forcast -->
+			<section class="col-8">
+				<h2>5 Day Forcast</h2>
+				<div class="row row-cols-1">
+					<div class="card-group">
+						<div class="col">
+							<div class="card">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="card">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="card">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="card">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="card">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								</div>
+							</div>
+						</div>					
+						</div>
+					</div>
+			</section>
+	
+
+	</main>
+
+
+	<!-- <main class="container">
 		<form id="task-form">
 			<span>Search By City:</span>
 			<input type="text" name="city-name" placeholder="Enter City Name"/>
 			<button class="btn" type="submit">Search</button>
 		</form>
+
 		<div class="row" id="row-1">
 		</div>
-	</main>	
+
+		<div class="container">
+			<div class="row">
+				<div class=" col card text-white bg-dark mb-3 h-100" style="max-width: 18rem;">
+					<div class="card-body">
+						<h5 class="card-title">Primary card title</h5>
+						<p class="card-text">1</p>
+						<p class="card-text">1</p>
+						<p class="card-text">1</p>
+						<p class="card-text">1</p>
+						<p class="card-text">1</p>
+					</div>
+				</div>
+				
+				<div class="col card text-white bg-dark mb-3 h-100" style="max-width: 18rem;">
+					<div class="card-body">
+						<h5 class="card-title">Primary card title</h5>
+						<p class="card-text">1</p>
+						<p class="card-text">1</p>
+						<p class="card-text">1</p>
+						<p class="card-text">1</p>
+						<p class="card-text">1</p>
+					</div>
+				</div>	
+				
+				<div class="col card text-white bg-dark mb-3 h-100" style="max-width: 18rem;">
+					<div class="card-body">
+						<h5 class="card-title">Primary card title</h5>
+						<p class="card-text">1</p>
+						<p class="card-text">1</p>
+						<p class="card-text">1</p>
+						<p class="card-text">1</p>
+						<p class="card-text">1</p>
+					</div>
+				</div>	
+				
+				<div class=" col card text-white bg-dark mb-3 h-100" style="max-width: 18rem;">
+					<div class="card-body">
+						<h5 class="card-title">Primary card title</h5>
+						<p class="card-text">1</p>
+						<p class="card-text">1</p>
+						<p class="card-text">1</p>
+						<p class="card-text">1</p>
+						<p class="card-text">1</p>
+					</div>
+				</div>
+				
+				<div class="col card text-white bg-dark mb-3 h-100" style="max-width: 18rem;">
+					<div class="card-body">
+						<h5 class="card-title">Primary card title</h5>
+						<p class="card-text">1</p>
+						<p class="card-text">1</p>
+						<p class="card-text">1</p>
+						<p class="card-text">1</p>
+						<p class="card-text">1</p>
+					</div>
+				</div>
+			</div>
+		</div>
+				
+		</main>	 -->
 	<script src="./assets/js/script.js"></script>
-</body>
-</html>
+	</body>
+	</html>
